@@ -1,0 +1,46 @@
+header img{
+    width: 200px;
+    height: 100px;
+    float: left;
+
+}
+header nav{
+    background-color: black;
+    text-align: center;
+    float: right;
+    width: 500px;
+    height: 40px;
+  
+}
+
+header nav ul{
+    list-style-type:none;
+   
+}
+header nav ul li{
+    display: inline ;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 40px;
+    
+}
+header nav ul a{
+    color: white;
+    display: inline-block;
+    height: 40px;
+    text-decoration: none;
+
+}
+header nav ul a:hover{
+    background-color: papayawhip;
+    color: black;
+}
+
+main h1{
+    font-size: 50px;
+    text-align: center;
+    
+}
+main p:nth-child(1)   {
+    font-size: 30px;
+}
