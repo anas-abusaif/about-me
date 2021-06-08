@@ -37,10 +37,31 @@ header nav ul a:hover{
 }
 
 main h1{
+ 
     font-size: 50px;
-    text-align: center;
+
     
 }
 main p:nth-child(1)   {
     font-size: 30px;
+}
+
+h2 {
+    color: pink;
+    background-color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+main ul{
+    list-style-type: square;
+}
+main ul li{
+    color: green;
+    background-color: purple;
+    text-align: center;
+}
+main ol li{
+    text-align: center;
+    background-color: yellow;
+    color: black;
 }
