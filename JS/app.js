@@ -1,6 +1,6 @@
 'use strict';
 
-let userScore = 0
+let userScore = 0;
 
 let userName = prompt('please enter your name');
 document.getElementById('user').innerHTML = 'hello ' + userName + '!, welcome to my website.';
@@ -10,18 +10,18 @@ let vacation = prompt('would i like to go on a vacation any time soon?').toLower
 if (vacation === 'yes' || vacation === 'y') {
   //console.log('you are correct')
   alert('you are correct');
-  userScore++
+  userScore++;
 } else if (vacation === 'no' || vacation === 'n') {
   // console.log('you are mistaken :)')
 } else {
   alert('please enter (yes) or (y) or (no) (n)!');
 }
 
-let bachDegr = prompt("am i a bachelor's degree holder? ").toLowerCase();
+let bachDegr = prompt("am i a bachelor's degree holder?").toLowerCase();
 if (bachDegr === 'yes' || bachDegr === 'y') {
   //console.log('you are correct')
   alert('you are correct');
-  userScore++
+  userScore++;
 } else if (bachDegr === 'no' || bachDegr === 'n') {
   // console.log('you are mistaken :)')
 } else {
@@ -33,8 +33,8 @@ if (residence === 'yes' || residence === 'y') {
   alert('you are mistaken');
 } else if (residence === 'no' || residence === 'n') {
   // console.log('you are correct :)')
-  alert('you are correct')
-  userScore++
+  alert('you are correct');
+  userScore++;
 } else {
   alert('please enter (yes) or (y) or (no) (n)!');
 }
@@ -43,7 +43,7 @@ let mangoSmoothie = prompt("do i keep unnecessarily bying games i'll never play 
 if (mangoSmoothie === 'yes' || mangoSmoothie === 'y') {
   //console.log('you are correct')
   alert('you are correct');
-  userScore++
+  userScore++;
 } else if (mangoSmoothie === 'no' || mangoSmoothie === 'n') {
   // console.log('you are mistaken :)')
 } else {
@@ -53,7 +53,7 @@ let nightRide = prompt('do i like going on night rides?').toLowerCase();
 if (nightRide === 'yes' || nightRide === 'y') {
   //console.log('you are correct')
   alert('you are correct');
-  userScore++
+  userScore++;
 } else if (nightRide === 'no' || nightRide === 'n') {
   // console.log('you are mistaken :)')
 } else {
@@ -71,12 +71,12 @@ while ( x < 3) {
   } else if (myHeight > 180) {
     var myHeight = prompt('too high!, try again');
     x++;
-    if (x=3){alert('i am 180 centemeters high');}
+    if (x===3){alert('i am 180 centemeters high');}
 
   } else if (myHeight < 180) {
     var myHeight = prompt('too low! try again')
     x++;
-    if (x=3){alert('i am 180 centemeters high');}
+    if (x===3){alert('i am 180 centemeters high');}
 
   } else {
     var myHeight = prompt('please enter a number');
@@ -86,12 +86,12 @@ while ( x < 3) {
 let favFruits=['mango', 'strawberry', 'orange','cherry','melon']
 var ff=prompt('guess one of my favorite fruits!')
 for(let f=0; f<6; f++){
-  if (ff==favFruits[0] || ff==favFruits[1] || ff==favFruits[2] || ff==favFruits[3] || ff==favFruits[4]){
+  if (ff===favFruits[0] || ff===favFruits[1] || ff===favFruits[2] || ff===favFruits[3] || ff===favFruits[4]){
     alert('you are correct!');
-    userScore++
-    break
+    userScore++;
+    break;
   }else{var ff=prompt('incorrect!, please try again');
-}
+  }
 }
 
-document.getElementById('score').innerHTML ='your final score is ' +userScore+ ' out of 7'
+document.getElementById('score').innerHTML ='your final score is ' +userScore+ ' out of 7';
