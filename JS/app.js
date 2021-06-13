@@ -68,7 +68,7 @@ while ( x < 3) {
 
 let favFruits=['mango', 'strawberry', 'orange','cherry','melon'];
 var ff=prompt('guess one of my favorite fruits!')
-for(let f=0; f<6; f++){
+for(let f=0; f<5; f++){
   if (ff===favFruits[0] || ff===favFruits[1] || ff===favFruits[2] || ff===favFruits[3] || ff===favFruits[4]){
     alert('you are correct!');
     userScore++;
@@ -76,5 +76,6 @@ for(let f=0; f<6; f++){
   }else{var ff=prompt('incorrect!, please try again');
   }
 }
+alert(`may favorite fruets are ${favFruits}`)
 
 document.getElementById('score').innerHTML ='your final score is ' +userScore+ ' out of 7';
